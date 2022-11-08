@@ -7,14 +7,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @SpringBootApplication
-@Controller
+
 public class DemoApplication {
 
-	@GetMapping("/")
-	@ResponseBody
-	public String index() {
-		return "Welcome To Spring Boot";
-	}
+	
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
